@@ -1,15 +1,3 @@
-"""
-Tái sử dụng mô hình đã huấn luyện (spam_model.joblib) để dự đoán email mới.
-
-Chạy sau khi đã chạy xong spam_classifier.py (file mô hình được tạo ra ở đó).
-
-Cách dùng:
-  python predict_email.py                         # chế độ nhập tay (tương tác)
-  python predict_email.py -t "Win a FREE prize!"  # dự đoán một đoạn văn bản
-  python predict_email.py -f email1.txt email2.txt  # dự đoán từ các file .txt
-  python predict_email.py -c new_emails.csv --col text -o ket_qua.csv  # dự đoán cả file CSV
-"""
-
 import argparse
 import re
 import sys
